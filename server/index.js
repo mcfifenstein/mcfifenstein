@@ -5,10 +5,7 @@ const bodyParser = require('body-parser'),
     csrf = require('csurf'),
     express = require('express'),
     path = require('path'),
-    pino = require('pino'),
-    { ansi } = require('./etc/ansi/ansi')
-
-const Test = require('./lib/Test')
+    pino = require('pino')
 
 const protectotron = csrf({ cookie: true })
 
@@ -24,8 +21,6 @@ const initApp = async () => {
     const log = pino({ level: 'error' })
 
     app.use(express.static(path.join(__dirname, '../../client/build')))
-
-    app.use('/api/test', Test)
 
     app.get('/api/auth/', protectotron, (req, res) => {
         const token = req.csrfToken()
@@ -54,7 +49,7 @@ const initApp = async () => {
     })
 
     app.listen(PORT, () => {
-        console.info(`\n${ ansi.BG_Blue }${ ansi.Red } KATANA \u001b[0m running on port ${ ansi.Cyan }${ PORT }\u001b[0m\n`)
+        console.info(`running`)
     })
 }
 
