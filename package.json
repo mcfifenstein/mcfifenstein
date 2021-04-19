@@ -1,0 +1,19 @@
+{
+  "name": "mcfifenstein",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcfifenstein/mcfifenstein.git"
+  },
+  "author": "Joe Fifer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcfifenstein/mcfifenstein/issues"
+  },
+  "homepage": "https://github.com/mcfifenstein/mcfifenstein#readme"
+}
