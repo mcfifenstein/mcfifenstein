@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'docker build -t . mcfifenstein'
                 sh 'npm install'
             }
         }
