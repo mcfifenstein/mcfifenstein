@@ -4,3 +4,4 @@ COPY package.json ./
 COPY . .
 RUN yarn
 RUN yarn build
+EXPOSE 3000
