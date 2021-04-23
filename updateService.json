@@ -1,0 +1,44 @@
+{
+  "capacityProviderStrategy": [
+    {
+      "base": number,
+      "capacityProvider": "string",
+      "weight": number
+    }
+  ],
+  "cluster": "string",
+  "deploymentConfiguration": {
+    "deploymentCircuitBreaker": {
+      "enable": boolean,
+      "rollback": boolean
+    },
+    "maximumPercent": number,
+    "minimumHealthyPercent": number
+  },
+  "desiredCount": number,
+  "enableExecuteCommand": boolean,
+  "forceNewDeployment": boolean,
+  "healthCheckGracePeriodSeconds": number,
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "assignPublicIp": "string",
+      "securityGroups": [ "string" ],
+      "subnets": [ "string" ]
+    }
+  },
+  "placementConstraints": [
+    {
+      "expression": "string",
+      "type": "string"
+    }
+  ],
+  "placementStrategy": [
+    {
+      "field": "string",
+      "type": "string"
+    }
+  ],
+  "platformVersion": "string",
+  "service": "string",
+  "taskDefinition": "string"
+}
